@@ -57,7 +57,6 @@
 				DC63B85F1F8D1894003491EB /* Controller */,
 				DC63B8601F8D18CE003491EB /* View */,
 				DC63B8611F8D18EC003491EB /* Resources */,
-				DC63B8561F8D0A7C003491EB /* LaunchScreen.storyboard */,
 			);
 			path = easyApp;
 			sourceTree = "<group>";
@@ -83,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				DC63B8541F8D0A7C003491EB /* Assets.xcassets */,
+				DC63B8561F8D0A7C003491EB /* LaunchScreen.storyboard */,
 				DC63B8591F8D0A7C003491EB /* Info.plist */,
 			);
 			path = Resources;
