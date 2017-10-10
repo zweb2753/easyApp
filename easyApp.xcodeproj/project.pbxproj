@@ -54,14 +54,38 @@
 		DC63B84C1F8D0A7C003491EB /* easyApp */ = {
 			isa = PBXGroup;
 			children = (
-				DC63B84D1F8D0A7C003491EB /* AppDelegate.swift */,
-				DC63B84F1F8D0A7C003491EB /* ViewController.swift */,
-				DC63B8511F8D0A7C003491EB /* Main.storyboard */,
-				DC63B8541F8D0A7C003491EB /* Assets.xcassets */,
+				DC63B85F1F8D1894003491EB /* Controller */,
+				DC63B8601F8D18CE003491EB /* View */,
+				DC63B8611F8D18EC003491EB /* Resources */,
 				DC63B8561F8D0A7C003491EB /* LaunchScreen.storyboard */,
-				DC63B8591F8D0A7C003491EB /* Info.plist */,
 			);
 			path = easyApp;
+			sourceTree = "<group>";
+		};
+		DC63B85F1F8D1894003491EB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DC63B84D1F8D0A7C003491EB /* AppDelegate.swift */,
+				DC63B84F1F8D0A7C003491EB /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DC63B8601F8D18CE003491EB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DC63B8511F8D0A7C003491EB /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DC63B8611F8D18EC003491EB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DC63B8541F8D0A7C003491EB /* Assets.xcassets */,
+				DC63B8591F8D0A7C003491EB /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,7 +299,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = easyApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/easyApp/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CTEC.easyApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -289,7 +313,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = easyApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/easyApp/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CTEC.easyApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
