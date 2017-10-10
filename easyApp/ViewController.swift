@@ -12,7 +12,11 @@ class ViewController: UIViewController
 {
     @IBOutlet weak var firstButton: UIButton!
     
-    @IBAction func clickedButton(_ sender: UIButton) {
+    @IBAction func clickedButton(_ sender: UIButton)
+    {
+        view.backgroundColor = createColor()
+        firstButton.setTitleColor(createColor(), for: .normal)
+        firstButton.backgroundColor = createColor()
     }
     override func viewDidLoad()
     {
@@ -20,7 +24,7 @@ class ViewController: UIViewController
         // Do any additional setup after loading the view, typically from a nib.
     }
     
-    private func creatRandomColor() -> UIColor
+    private func createColor() -> UIColor
     {
        let newColor :UIColor
        let redAmount = CGFloat (Double (arc4random_uniform(256))/255.00)
