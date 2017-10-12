@@ -12,6 +12,15 @@ class ViewController: UIViewController
 {
     @IBOutlet weak var firstButton: UIButton!
     
+    @IBOutlet weak var coolSwitch: UISwitch!
+    
+    func clickedSwitch(_ sender: UIButton)
+    {
+        
+    }
+    @IBAction func switchSetColor(_ sender: Any) {
+    }
+    
     @IBAction func clickedButton(_ sender: UIButton)
     {
         view.backgroundColor = createColor()
