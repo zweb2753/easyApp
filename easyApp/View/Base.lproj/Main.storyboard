@@ -32,6 +32,14 @@
                                     <action selector="switchSetColor:" destination="BYZ-38-t0r" eventType="valueChanged" id="Lpe-n3-Tb4"/>
                                 </connections>
                             </switch>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7O7-sW-TSw">
+                                <rect key="frame" x="131" y="452" width="111" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Change screens"/>
+                                <connections>
+                                    <segue destination="nLD-Cc-qJv" kind="show" id="uGi-bc-xHE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -42,15 +50,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-367" y="118"/>
+            <point key="canvasLocation" x="-394.39999999999998" y="115.59220389805098"/>
         </scene>
-        <!--View Controller-->
+        <!--Second Screen Controller-->
         <scene sceneID="vus-M3-lDC">
             <objects>
-                <viewController id="nLD-Cc-qJv" sceneMemberID="viewController">
+                <viewController id="nLD-Cc-qJv" customClass="SecondScreenController" customModule="easyApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="33g-HL-qxe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QzI-A7-TjX">
+                                <rect key="frame" x="155" y="318" width="65" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Go Home"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="AxQ-A8-8p0"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="hRK-JU-Ikm"/>
                     </view>
