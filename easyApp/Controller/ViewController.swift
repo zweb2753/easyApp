@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController
 {
+    lazy var colorTool : ColorTools = ColorTools()
+    
     @IBOutlet weak var firstButton: UIButton!
     
     @IBOutlet weak var coolSwitch: UISwitch!
@@ -23,26 +25,14 @@ class ViewController: UIViewController
     
     @IBAction func clickedButton(_ sender: UIButton)
     {
-        view.backgroundColor = createColor()
-        firstButton.setTitleColor(createColor(), for: .normal)
-        firstButton.backgroundColor = createColor()
+        view.backgroundColor = colorTool.createColor()
+        firstButton.setTitleColor(colorTool.createColor(), for: .normal)
+        firstButton.backgroundColor = colorTool.createColor()
     }
     override func viewDidLoad()
     {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-    }
-    
-    private func createColor() -> UIColor
-    {
-       let newColor :UIColor
-       let redAmount = CGFloat (Double (arc4random_uniform(256))/255.00)
-       let greenAmount = CGFloat (Double (arc4random_uniform(256))/255.00)
-       let blueAmount = CGFloat (Double (arc4random_uniform(256))/255.00)
-       newColor = UIColor(red: redAmount, green: greenAmount, blue: blueAmount, alpha: CGFloat(1.0))
-    
-    
-       return newColor
     }
 
     override func didReceiveMemoryWarning() {

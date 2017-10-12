@@ -13,6 +13,7 @@
 		DC63B8551F8D0A7C003491EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC63B8541F8D0A7C003491EB /* Assets.xcassets */; };
 		DC63B8581F8D0A7C003491EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC63B8561F8D0A7C003491EB /* LaunchScreen.storyboard */; };
 		DCE0DBD81F8FB8CD00E71377 /* SecondScreeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE0DBD71F8FB8CD00E71377 /* SecondScreeController.swift */; };
+		DCE0DBDC1F8FBEDD00E71377 /* ColorTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE0DBDB1F8FBEDD00E71377 /* ColorTools.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		DC63B8571F8D0A7C003491EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC63B8591F8D0A7C003491EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DCE0DBD71F8FB8CD00E71377 /* SecondScreeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreeController.swift; sourceTree = "<group>"; };
+		DCE0DBDB1F8FBEDD00E71377 /* ColorTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTools.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +42,7 @@
 		DC63B8411F8D0A7C003491EB = {
 			isa = PBXGroup;
 			children = (
+				DCE0DBDA1F8FBEB300E71377 /* Model */,
 				DC63B84C1F8D0A7C003491EB /* easyApp */,
 				DC63B84B1F8D0A7C003491EB /* Products */,
 			);
@@ -77,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				DC63B8511F8D0A7C003491EB /* Main.storyboard */,
+				DC63B8561F8D0A7C003491EB /* LaunchScreen.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -85,10 +89,17 @@
 			isa = PBXGroup;
 			children = (
 				DC63B8541F8D0A7C003491EB /* Assets.xcassets */,
-				DC63B8561F8D0A7C003491EB /* LaunchScreen.storyboard */,
 				DC63B8591F8D0A7C003491EB /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		DCE0DBDA1F8FBEB300E71377 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DCE0DBDB1F8FBEDD00E71377 /* ColorTools.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,6 +177,7 @@
 				DC63B8501F8D0A7C003491EB /* ViewController.swift in Sources */,
 				DC63B84E1F8D0A7C003491EB /* AppDelegate.swift in Sources */,
 				DCE0DBD81F8FB8CD00E71377 /* SecondScreeController.swift in Sources */,
+				DCE0DBDC1F8FBEDD00E71377 /* ColorTools.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
