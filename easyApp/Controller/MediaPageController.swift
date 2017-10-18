@@ -41,15 +41,15 @@ class MediaPageController: UIViewController
         }
         if (imageCounter == 0)
         {
-            imageFrame.image = UIImage(named: "Tree")
+            imageFrame.image = UIImage(named: "Proj Pic Tree")
         }
         else if (imageCounter == 1)
         {
-            imageFrame.image = UIImage(named: "Bed")
+            imageFrame.image = UIImage(named: "Proj Pic Bed")
         }
         else
         {
-            imageFrame.image = UIImage(named: "Food")
+            imageFrame.image = UIImage(named: "Proj Pic Food")
         }
     }
 
