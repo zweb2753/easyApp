@@ -7,16 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DC3FF91F1F979E7E00C48B0D /* MediaPageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3FF91E1F979E7E00C48B0D /* MediaPageController.swift */; };
 		DC63B84E1F8D0A7C003491EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC63B84D1F8D0A7C003491EB /* AppDelegate.swift */; };
 		DC63B8501F8D0A7C003491EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC63B84F1F8D0A7C003491EB /* ViewController.swift */; };
 		DC63B8531F8D0A7C003491EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC63B8511F8D0A7C003491EB /* Main.storyboard */; };
 		DC63B8551F8D0A7C003491EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC63B8541F8D0A7C003491EB /* Assets.xcassets */; };
 		DC63B8581F8D0A7C003491EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC63B8561F8D0A7C003491EB /* LaunchScreen.storyboard */; };
+		DCCF44051F94FF5800EE9DD2 /* SecondPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCF44041F94FF5800EE9DD2 /* SecondPageViewController.swift */; };
+		DCCF44071F9503EB00EE9DD2 /* ThirdPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCCF44061F9503EB00EE9DD2 /* ThirdPageViewController.swift */; };
 		DCE0DBD81F8FB8CD00E71377 /* SecondScreeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE0DBD71F8FB8CD00E71377 /* SecondScreeController.swift */; };
 		DCE0DBDC1F8FBEDD00E71377 /* ColorTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE0DBDB1F8FBEDD00E71377 /* ColorTools.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DC3FF91E1F979E7E00C48B0D /* MediaPageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaPageController.swift; sourceTree = "<group>"; };
 		DC63B84A1F8D0A7C003491EB /* easyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = easyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC63B84D1F8D0A7C003491EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC63B84F1F8D0A7C003491EB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		DC63B8541F8D0A7C003491EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC63B8571F8D0A7C003491EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC63B8591F8D0A7C003491EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCCF44041F94FF5800EE9DD2 /* SecondPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPageViewController.swift; sourceTree = "<group>"; };
+		DCCF44061F9503EB00EE9DD2 /* ThirdPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdPageViewController.swift; sourceTree = "<group>"; };
 		DCE0DBD71F8FB8CD00E71377 /* SecondScreeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreeController.swift; sourceTree = "<group>"; };
 		DCE0DBDB1F8FBEDD00E71377 /* ColorTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTools.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,6 +78,9 @@
 				DCE0DBD71F8FB8CD00E71377 /* SecondScreeController.swift */,
 				DC63B84D1F8D0A7C003491EB /* AppDelegate.swift */,
 				DC63B84F1F8D0A7C003491EB /* ViewController.swift */,
+				DCCF44041F94FF5800EE9DD2 /* SecondPageViewController.swift */,
+				DCCF44061F9503EB00EE9DD2 /* ThirdPageViewController.swift */,
+				DC3FF91E1F979E7E00C48B0D /* MediaPageController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -175,9 +184,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC63B8501F8D0A7C003491EB /* ViewController.swift in Sources */,
+				DC3FF91F1F979E7E00C48B0D /* MediaPageController.swift in Sources */,
 				DC63B84E1F8D0A7C003491EB /* AppDelegate.swift in Sources */,
 				DCE0DBD81F8FB8CD00E71377 /* SecondScreeController.swift in Sources */,
+				DCCF44071F9503EB00EE9DD2 /* ThirdPageViewController.swift in Sources */,
 				DCE0DBDC1F8FBEDD00E71377 /* ColorTools.swift in Sources */,
+				DCCF44051F94FF5800EE9DD2 /* SecondPageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

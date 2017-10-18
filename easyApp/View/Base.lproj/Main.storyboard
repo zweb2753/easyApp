@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L9R-ea-wSe">
-                                <rect key="frame" x="155" y="318" width="64" height="30"/>
+                                <rect key="frame" x="154" y="221" width="64" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Click Me!"/>
                                 <connections>
@@ -26,18 +26,26 @@
                                 </connections>
                             </button>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TB9-nh-8kf">
-                                <rect key="frame" x="163" y="0.0" width="49" height="31"/>
+                                <rect key="frame" x="164" y="569" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="switchSetColor:" destination="BYZ-38-t0r" eventType="valueChanged" id="Lpe-n3-Tb4"/>
                                 </connections>
                             </switch>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7O7-sW-TSw">
-                                <rect key="frame" x="131" y="452" width="111" height="30"/>
+                                <rect key="frame" x="131" y="318" width="111" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Change screens"/>
                                 <connections>
                                     <segue destination="nLD-Cc-qJv" kind="show" id="uGi-bc-xHE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pFE-6n-3SF">
+                                <rect key="frame" x="123" y="421" width="126" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="ShortCut Button"/>
+                                <connections>
+                                    <segue destination="dxU-Zg-7LI" kind="show" id="d9l-O3-EGd"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -63,9 +71,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QzI-A7-TjX">
                                 <rect key="frame" x="155" y="318" width="65" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Go Home"/>
+                                <state key="normal" title="Next"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="AxQ-A8-8p0"/>
+                                    <segue destination="khv-sI-wut" kind="show" id="pem-A1-gqA"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -77,5 +85,105 @@
             </objects>
             <point key="canvasLocation" x="246" y="117"/>
         </scene>
+        <!--Second Page View Controller-->
+        <scene sceneID="rXO-zv-CYf">
+            <objects>
+                <viewController id="khv-sI-wut" customClass="SecondPageViewController" customModule="easyApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5tU-Pf-hQP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ODx-VS-0tO">
+                                <rect key="frame" x="164" y="318" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="BYc-gF-poO" kind="show" id="J39-5G-kKS"/>
+                                </connections>
+                            </button>
+                            <datePicker contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="ggt-pr-0OT">
+                                <rect key="frame" x="0.0" y="370" width="375" height="162"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <date key="date" timeIntervalSinceReferenceDate="529861806.67296499">
+                                    <!--2017-10-16 15:50:06 +0000-->
+                                </date>
+                            </datePicker>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="gws-7D-Qxs"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="43e-uv-AZ6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="924" y="115"/>
+        </scene>
+        <!--Third Page View Controller-->
+        <scene sceneID="Qn4-LE-6D3">
+            <objects>
+                <viewController id="BYc-gF-poO" customClass="ThirdPageViewController" customModule="easyApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3Jd-Pn-IOj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="po5-Cu-xgV">
+                                <rect key="frame" x="164" y="318" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="dxU-Zg-7LI" kind="show" id="eYx-kk-9R8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="pbW-aT-QBf"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c07-WG-VcI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1606" y="116"/>
+        </scene>
+        <!--Media Page Controller-->
+        <scene sceneID="QWW-fj-mXO">
+            <objects>
+                <viewController id="dxU-Zg-7LI" customClass="MediaPageController" customModule="easyApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SqW-V1-lue">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="etE-zH-gDw">
+                                <rect key="frame" x="166" y="538" width="42" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Home"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="eUr-Tj-OD3"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="VoE-By-BsE">
+                                <rect key="frame" x="128" y="203" width="118" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </slider>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ONF-Fl-F6i">
+                                <rect key="frame" x="67" y="315" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="8Qm-8Y-HLE"/>
+                    </view>
+                    <connections>
+                        <outlet property="ImagButton" destination="ONF-Fl-F6i" id="3PE-83-pVQ"/>
+                        <outlet property="ImageButton" destination="ONF-Fl-F6i" id="Aeb-Fu-AvI"/>
+                        <outlet property="Soundbutton" destination="VoE-By-BsE" id="1XT-4y-Wya"/>
+                        <outlet property="imageFrame" destination="ONF-Fl-F6i" id="Nrn-4u-YAu"/>
+                        <outlet property="oundSlider" destination="VoE-By-BsE" id="IyA-bU-gnw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nvE-Gx-cjo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2276" y="114.69265367316342"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="d9l-O3-EGd"/>
+    </inferredMetricsTieBreakers>
 </document>
